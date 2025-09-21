@@ -68,9 +68,9 @@ const sessionOptions = {
   }
 }; 
 
-// app.get('/', (async (req, res) => {
-//   res.send('Hello World!');
-// }));
+app.get('/', (async (req, res) => {
+  res.redirect("/listings");
+}));
 
 
 
