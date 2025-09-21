@@ -1,0 +1,48 @@
+<%- layout('layouts/boilerplate') %>
+<body>
+    <form method="post" action="/listings" class="needs-validation" enctype="multipart/form-data" novalidate>
+    <h3>Add New Listing</h3><br>
+
+    <div class="col">
+    <label for="title" class="form-label">Title:</label>
+    <input type="text" id="title" name="listing[title]" required class="form-control">
+    <div class="invalid-feedback">Please provide a title.</div><br>
+    </div>
+
+    <div class="col">
+    <label for="image" class="form-label">Upload Image:</label>
+    <input type="file" id="image" name="listing[image]" class="form-control" required>
+    <div class="invalid-feedback">Please provide a valid image URL.</div><br>
+    </div>
+
+    <div class="col">
+    <label for="description" class="form-label">Description:</label>
+    <textarea id="description" name="listing[description]" class="form-control" required></textarea>
+    <div class="invalid-feedback">Please enter a description.</div><br>
+    </div>
+
+    <div class="row">
+        <div class="mb-3 col-md-3">
+            <label for="price" class="form-label">Price:</label>
+            <input type="text" id="price" name="listing[price]" class="form-control" required>
+            <div class="invalid-feedback">Please enter a valid price.</div><br>
+        </div>
+        
+        <div class="mb-3 col-md-5">
+            <label for="location" class="form-label">Location:</label>
+            <input type="text" id="location" name="listing[location]" class="form-control" required>
+            <div class="invalid-feedback">Please provide a location.</div><br>
+        </div>
+        
+        <div class="mb-3 col-md-4">
+            <label for="country" class="form-label">Country:</label>
+            <input type="text" id="country" name="listing[country]" class="form-control" required>
+            <div class="invalid-feedback">Please enter a country.</div><br>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-dark">Add Listing</button>
+</form>
+
+</body>
+</html>
