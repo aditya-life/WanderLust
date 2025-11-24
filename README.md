@@ -1,4 +1,4 @@
-# WanderLust 🏡✈️  
+# StayBooking 🏡✈️  
 A MERN stack web application inspired by Airbnb, where users can explore listings, create their own stays, and manage bookings.  
 
 ## Features  
@@ -19,8 +19,8 @@ A MERN stack web application inspired by Airbnb, where users can explore listing
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/aditya-life/WanderLust.git
-   cd WanderLust
+   git clone https://github.com/aditya-life/StayBooking.git
+   cd StayBooking
 2. Install dependencies
       - npm install
    
@@ -30,7 +30,7 @@ Configuration
 - Create a .env file in the root directory and add the following:
 
 MongoDB Connection
-- MONGO_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/wanderlust
+- MONGO_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/StayBooking
 
 Cloudinary (for image upload)
 - CLOUD_NAME=your_cloud_name
